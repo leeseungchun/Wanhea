@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ItemInforActivity"
+    tools:showIn="@layout/app_bar_item_infor"
+    android:layout_weight="100"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:weightSum="40"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_weight="20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="20"
+            >
+
+            <ImageView
+                android:id="@+id/itemImg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="12"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="플랫카라 원피스"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                />
+            <LinearLayout
+                android:layout_weight="4"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/detailInfor"
+                    android:text="상세정보"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/patter"
+                    android:text="패턴"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="20"
+            android:weightSum="20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_weight="4"
+                android:layout_width="60dp"
+                android:layout_height="0dp"
+                android:text="원단"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/material_list"
+                android:layout_weight="13"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="총"
+                    android:textSize="17dp"
+                    />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="5000"
+                    android:textSize="17dp"
+                    android:gravity="right"
+                    />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="원"
+                    android:textSize="17dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_weight="60"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:weightSum="10"
+        >
+
+        <LinearLayout
+            android:background="@drawable/item_infor_border"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="20"
+            >
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="완성사이즈 "
+                />
+
+            <TextView
+                android:id="@+id/cloLength"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="옷길이 "
+                />
+
+            <TextView
+                android:id="@+id/bust"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="가슴둘레 "
+                />
+
+            <TextView
+                android:id="@+id/sleeveLength"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="소메길이 "
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="단위 : cm"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="필요한 재료"
+                />
+            <TextView
+                android:id="@+id/material"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="원단 : "
+                />
+
+            <TextView
+                android:id="@+id/subItem"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="부자재 "
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

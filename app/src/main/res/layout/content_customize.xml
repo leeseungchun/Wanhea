@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Customize.Customize"
+    tools:showIn="@layout/activity_customize"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/acc_btn"
+                android:text="악세사리"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/etc_btn"
+                android:text="기타장식"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/top_btn"
+                android:text="상의"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/pants_btn"
+                android:text="하의"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/outter_btn"
+                android:text="아우터"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/onepice_btn"
+                android:text="원피스"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id = "@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:background="#000000"
+        />
+
+
+
+</LinearLayout>
