@@ -10,6 +10,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface RestApi {
 
@@ -30,6 +31,9 @@ public interface RestApi {
 
     @GET("a/item")
     Call<List<Item>> item();
+
+    @GET("a/search/{word}")
+    Call<List<Item>> search(@Path("word")String word);
 
 
 }
