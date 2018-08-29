@@ -60,20 +60,42 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:background="#0000DD">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                >
 
-                <TextView
-                    android:layout_width="match_parent"
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="검색기능" />-->
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="검색기능" />
+                    android:background="@drawable/search_border"
+                    />
+
+                <ImageView
+                    android:id="@+id/magnifier"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/zoom"
+                    android:onClick="@{HomeActivity::onButtonClick}"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"

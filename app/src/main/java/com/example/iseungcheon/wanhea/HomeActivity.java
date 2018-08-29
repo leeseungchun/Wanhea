@@ -15,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.iseungcheon.wanhea.DTO.Item;
 import com.example.iseungcheon.wanhea.base.BaseApplication;
@@ -61,6 +62,29 @@ public class HomeActivity extends AppCompatActivity
         System.out.println("확인");
 
         int id = view.getId();
+        if(id == R.id.magnifier){
+            EditText et = (EditText) findViewById(R.id.search);
+            System.out.println("들어옴");
+            System.out.println(et.getText());
+            Call<List<Item>> call = BaseApplication.restApi.search(et.getText().toString());
+            call.enqueue(new Callback<List<Item>>() {
+                @Override
+                public void onResponse(Call<List<Item>> call, Response<List<Item>> response) {
+                    System.out.println("통신성공 ");
+                    List<Item> items = (List<Item>) response.body();
+                    System.out.println("검색 결과 : "+ items.get(0).getName());
+
+                }
+
+                @Override
+                public void onFailure(Call<List<Item>> call, Throwable t) {
+                    System.out.println(t);
+
+                }
+            });
+            return;
+        }
+
         Button b =  (Button)findViewById(id);
         final String title = b.getText().toString();
         int uid = Integer.parseInt(b.getTag().toString());
